@@ -10,9 +10,14 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to ="/" className="nav-logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="mdx blog" />
           </Link>
+          <btn className="toggle-btn">
+            <FaBars />
+          </btn>
         </div>
+        <Links styleClass = "nav-links" />
+        <SocialLinks styleClass = "nav-icons" />
       </div>
     </nav>
   )
