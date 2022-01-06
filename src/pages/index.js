@@ -5,7 +5,7 @@ import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
 const IndexPage = () => {
   return <Layout>
-
+<Hero showaPerson />
 
   </Layout>
 }
