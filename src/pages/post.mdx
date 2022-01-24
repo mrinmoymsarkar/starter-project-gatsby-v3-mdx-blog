@@ -25,8 +25,37 @@ All Posts
 
 <div className="nice-text">
 <h3>Nice Text </h3>
-<h2>React COmponents</h2>
-<Counter/>
+
 <FiInfo className= "nice-text-icon"></FiInfo>
 </div>
+
+<h2>React COmponents</h2>
+<Counter/>
+
+```jsx
+import React from "react"
+import styled from "styled-components"
+import { AiOutlineLike } from "react-icons/ai"
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton/>
+
 </section>
