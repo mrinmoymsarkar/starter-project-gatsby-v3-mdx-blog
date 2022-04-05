@@ -4,10 +4,14 @@ import Layout from '../components/Layout'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
 const IndexPage = ({data}) => {
-  console.log(data)
-  return <Layout>
-<Hero showaPerson />
 
+  const {
+    allMdx: { nodes: posts },
+} = data
+  return <Layout>
+<Hero showPerson />
+    <Posts posts={posts}
+    title = "recently published"/>
   </Layout>
 }
 
