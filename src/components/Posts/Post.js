@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const Post = (props) => {
-  console.log(props);
+  console.log('post', props);
   return (
     <h4>single post</h4>
   )
