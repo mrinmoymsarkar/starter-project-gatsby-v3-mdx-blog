@@ -59,6 +59,7 @@ const Wrapper = styled.article`
     align-items: center;
     svg {
       margin-left: 0.25rem;
+      
       font-size: 1.2rem;
     }
   }
